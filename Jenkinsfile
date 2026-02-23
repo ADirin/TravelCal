@@ -9,7 +9,7 @@ pipeline {
   environment {
     PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
   }
- Stages{
+ stages{
     stage('check'){
         steps {
         git 'https://github.com/ADirin/TravelCal.git'
