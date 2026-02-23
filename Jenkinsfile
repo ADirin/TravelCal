@@ -12,7 +12,7 @@ pipeline {
  stages{
     stage('check'){
         steps {
-        git 'https://github.com/ADirin/TravelCal.git'
+            git url: 'https://github.com/ADirin/TravelCal.git'
        }
     }
 
@@ -28,7 +28,7 @@ pipeline {
     }
     stage('Report'){
         steps {
-        bat 'mvn jacoco:report'
+             bat 'mvn jacoco:report'
         }
     }
  }
